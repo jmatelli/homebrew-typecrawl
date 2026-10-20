@@ -5,13 +5,13 @@
 class Typecrawl < Formula
   desc "A terminal typing test with RPG-style progression (XP, achievements, HP/combo mechanics)."
   homepage "https://github.com/jmatelli/typecrawl"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jmatelli/typecrawl/releases/download/v0.2.2/typecrawl_0.2.2_darwin_x86_64.tar.gz"
-      sha256 "37935d52410786ee322e24cf4153c8e5bc74352e6a85990c78cffd673c6db1a4"
+      url "https://github.com/jmatelli/typecrawl/releases/download/v0.2.3/typecrawl_0.2.3_darwin_x86_64.tar.gz"
+      sha256 "5d5c828a398431e01519119d822a264b8420cd829ca8be688913b14cb2d943af"
 
       define_method(:install) do
         bin.install "typecrawl"
@@ -19,8 +19,8 @@ class Typecrawl < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jmatelli/typecrawl/releases/download/v0.2.2/typecrawl_0.2.2_darwin_arm64.tar.gz"
-      sha256 "b37da9b555e2768015a73238e3600ecefafcf9dc0cf0cbf6ccedf04786149c27"
+      url "https://github.com/jmatelli/typecrawl/releases/download/v0.2.3/typecrawl_0.2.3_darwin_arm64.tar.gz"
+      sha256 "7b496de8537714ea783e94f4fce2a0618ad9eda9b5bfbfd0848ea41444747531"
 
       define_method(:install) do
         bin.install "typecrawl"
@@ -31,16 +31,16 @@ class Typecrawl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmatelli/typecrawl/releases/download/v0.2.2/typecrawl_0.2.2_linux_x86_64.tar.gz"
-      sha256 "54e02ece399d4e98467c8a0bb8b6167d4f3ffd6caec57b7d02deeee63f878e3f"
+      url "https://github.com/jmatelli/typecrawl/releases/download/v0.2.3/typecrawl_0.2.3_linux_x86_64.tar.gz"
+      sha256 "ca82582754a1ff9a6b8a1cb2ecb48e932494762b2e707e094ce3d35916ebebf4"
       define_method(:install) do
         bin.install "typecrawl"
         bin.install "tc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmatelli/typecrawl/releases/download/v0.2.2/typecrawl_0.2.2_linux_arm64.tar.gz"
-      sha256 "74fe6ce2613ea30995e4b3d0075a01940236a0aaed48f1ef2dfed464819781bd"
+      url "https://github.com/jmatelli/typecrawl/releases/download/v0.2.3/typecrawl_0.2.3_linux_arm64.tar.gz"
+      sha256 "f9bccf5ba38eb471ef40529ede090323a82c78dde7828fbdd915bba083e061f8"
       define_method(:install) do
         bin.install "typecrawl"
         bin.install "tc"
